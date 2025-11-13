@@ -1,0 +1,41 @@
+UFW Firewall Configuration - Task 2 by Jaideep Raj Dutta
+
+Initial UFW Status:
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW IN    Anywhere                  
+80/tcp                     ALLOW IN    Anywhere                  
+22/tcp (v6)                ALLOW IN    Anywhere (v6)             
+80/tcp (v6)                ALLOW IN    Anywhere (v6)             
+
+
+Command: sudo apt install ufw
+
+Command: sudo ufw enable
+
+Command: sudo ufw default deny incoming
+
+Command: sudo ufw default allow outgoing
+
+Command: sudo ufw allow 22/tcp
+
+Command: sudo ufw allow 80/tcp
+
+Final UFW Status:
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW IN    Anywhere                  
+80/tcp                     ALLOW IN    Anywhere                  
+22/tcp (v6)                ALLOW IN    Anywhere (v6)             
+80/tcp (v6)                ALLOW IN    Anywhere (v6)             
+

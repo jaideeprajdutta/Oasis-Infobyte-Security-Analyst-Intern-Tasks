@@ -1,0 +1,29 @@
+- Nikto v2.5.0/
++ Target Host: 127.0.0.1
++ Target Port: 80
++ GET /dvwa/: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /dvwa/: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ OPTIONS OPTIONS: Allowed HTTP Methods: GET, POST, OPTIONS, HEAD .
++ GET /dvwa///etc/hosts: The server install allows reading of any system file by adding an extra '/' to the URL.
++ GET /dvwa/config/: Directory indexing found.
++ GET /dvwa/config/: Configuration information may be available remotely.
++ GET /dvwa/tests/: Directory indexing found.
++ GET /dvwa/tests/: This might be interesting.
++ GET /dvwa/database/: Directory indexing found.
++ GET /dvwa/database/: Database directory found.
++ GET /dvwa/docs/: Directory indexing found.
++ GET /dvwa/login.php: Admin login page/section found.
++ GET /dvwa/.git/index: Git Index file may contain directory listing information.
++ GET /dvwa/.git/HEAD: Git HEAD file found. Full repo details may be present.
++ GET /dvwa/.git/config: Git config file found. Infos about repo details may be present.
++ GET /dvwa/.gitignore: .gitignore file found. It is possible to grasp the directory structure.
++ GET /dvwa/wp-content/themes/twentyeleven/images/headers/server.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.
++ GET /dvwa/wordpress/wp-content/themes/twentyeleven/images/headers/server.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.
++ GET /dvwa/wp-includes/Requests/Utility/content-post.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.
++ GET /dvwa/wordpress/wp-includes/Requests/Utility/content-post.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.
++ GET /dvwa/wp-includes/js/tinymce/themes/modern/Meuhy.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.
++ GET /dvwa/wordpress/wp-includes/js/tinymce/themes/modern/Meuhy.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.
++ GET /dvwa/assets/mobirise/css/meta.php?filesrc=: A PHP backdoor file manager was found.
++ GET /dvwa/login.cgi?cli=aa%20aa%27cat%20/etc/hosts: Some D-Link router remote command execution.
++ GET /dvwa/shell?cat+/etc/hosts: A backdoor was identified.
++ GET /dvwa/.dockerignore: .dockerignore file found. It may be possible to grasp the directory structure and learn more about the site.
